@@ -1,14 +1,15 @@
 import { test, expect } from '@playwright/test';
 
+import logindata from "../testData/login.json"
 
 test("Verify Login with Valid Credential", async ({page})=>{
 
     //Actions 
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
-    await page.locator(`input[name='username']`).fill("Admin")
+    await page.locator(`input[name='username']`).fill(logindata.username)
 
-    await page.locator("input[type='password']").fill("admin123")
+    await page.locator("input[type='password']").fill(logindata.password)
 
     await page.locator("button[type='submit']").click()
 
