@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
-import data from "../testData/addjobtitle.json"
-import logindata from "../testData/login.json"
+import data from "../../testData/addjobtitle.json"
+import logindata from "../../testData/login.json"
 test.describe('Add Job Title Feature', () => {
-    test('should add a new job title successfully', async ({ page }) => {
+    test('TC1223 - should add a new job title successfully', async ({ page }) => {
 
         await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         await page.locator(`input[name='username2']`).fill(logindata.username)

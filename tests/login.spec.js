@@ -5,7 +5,7 @@ import logindata from "../testData/login.json"
 test("Verify Login with Valid Credential", async ({page})=>{
 
     //Actions 
-    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    await page.goto("/web/index.php/auth/login")
 
     await page.locator(`input[name='username']`).fill(logindata.username)
 
@@ -24,7 +24,7 @@ test("Verify Login with Valid Credential", async ({page})=>{
 test("Verify Login with Valid Username and Invalid Password", async ({page})=>{
 
     //Actions 
-    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    await page.goto("/web/index.php/auth/login")
 
     await page.locator("input[name='username']").fill("Admin")
 
@@ -42,7 +42,7 @@ test("Verify Login with Valid Username and Invalid Password", async ({page})=>{
 test("Verify login with Invalid Username and InValid Password", async ({page})=>{
 
     //Actions 
-    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    await page.goto("/web/index.php/auth/login")
 
     await page.locator("input[name='username']").fill("bjhbhj")
 
@@ -58,7 +58,7 @@ test("Verify login with Invalid Username and InValid Password", async ({page})=>
 test("Verify login with Invalid Username and Valid Password", async ({page})=>{
 
     //Actions 
-    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    await page.goto("/web/index.php/auth/login")
 
     await page.locator("input[name='username']").fill("dsfesf")
 
