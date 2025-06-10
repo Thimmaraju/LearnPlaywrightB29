@@ -16,7 +16,9 @@ test("Verify Login with Valid Credential", async ({page})=>{
     // Assertions
     await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
   
+    await page.close()
     
+   
 
 })
 

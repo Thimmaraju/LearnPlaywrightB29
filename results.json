@@ -6,7 +6,7 @@
     "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
-    "globalTimeout": 0,
+    "globalTimeout": 3600000,
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
@@ -39,55 +39,7 @@
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
         "repeatEach": 1,
-        "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "D:/learnPlaywrightB29/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "D:/learnPlaywrightB29/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "D:/learnPlaywrightB29/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "D:/learnPlaywrightB29/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "D:/learnPlaywrightB29/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "D:/learnPlaywrightB29/test-results",
-        "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -103,143 +55,62 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.52.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Admin\\addjobtitle.spec.js",
-      "file": "Admin/addjobtitle.spec.js",
+      "title": "login.spec.js",
+      "file": "login.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Add Job Title Feature",
-          "file": "Admin/addjobtitle.spec.js",
-          "line": 4,
-          "column": 6,
-          "specs": [
+          "title": "Verify Login with Valid Credential",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "should add a new job title successfully",
-              "ok": false,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
                 {
-                  "timeout": 30000,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7605,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-10T05:23:37.148Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30217,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\learnPlaywrightB29\\tests\\Admin\\addjobtitle.spec.js",
-                            "column": 55,
-                            "line": 8
-                          },
-                          "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\\'username2\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m`input[name='username2']`\u001b[39m)\u001b[33m.\u001b[39mfill(logindata\u001b[33m.\u001b[39musername)\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(logindata\u001b[33m.\u001b[39mpassword)\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[type='submit']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\learnPlaywrightB29\\tests\\Admin\\addjobtitle.spec.js:8:55\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-09T04:39:57.054Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\Admin-addjobtitle-Add-Job--010fe--new-job-title-successfully-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "_error-context-1",
-                          "contentType": "text/markdown",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\Admin-addjobtitle-Add-Job--010fe--new-job-title-successfully-chromium\\error-context.md"
-                        }
-                      ]
-                    },
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30404,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\learnPlaywrightB29\\tests\\Admin\\addjobtitle.spec.js",
-                            "column": 55,
-                            "line": 8
-                          },
-                          "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\\'username2\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m`input[name='username2']`\u001b[39m)\u001b[33m.\u001b[39mfill(logindata\u001b[33m.\u001b[39musername)\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(logindata\u001b[33m.\u001b[39mpassword)\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"button[type='submit']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\learnPlaywrightB29\\tests\\Admin\\addjobtitle.spec.js:8:55\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2025-06-09T04:40:29.227Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\Admin-addjobtitle-Add-Job--010fe--new-job-title-successfully-chromium-retry1\\test-failed-1.png"
-                        },
-                        {
-                          "name": "_error-context-1",
-                          "contentType": "text/markdown",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\Admin-addjobtitle-Add-Job--010fe--new-job-title-successfully-chromium-retry1\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\Admin-addjobtitle-Add-Job--010fe--new-job-title-successfully-chromium-retry1\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
+                  "attachments": []
                 }
               ],
-              "id": "077616bb49b58368103b-e5198395775026824958",
-              "file": "Admin/addjobtitle.spec.js",
-              "line": 5,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "badc1754af1944f68b2b-10beeedd772ce2ec3c5f",
+          "file": "login.spec.js",
+          "line": 5,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-09T04:39:55.878Z",
-    "duration": 64780.22900000001,
-    "expected": 0,
+    "startTime": "2025-06-10T05:23:33.289Z",
+    "duration": 12758.814000000013,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
