@@ -7,9 +7,9 @@ test("Verify Login with Valid Credential", async ({page})=>{
     //Actions 
     await page.goto("/web/index.php/auth/login")
 
-    await page.locator(`input[name='username']`).fill(logindata.username)
+    await page.locator(`input[name='username']`).fill(process.env.ORG_USERNAME)
 
-    await page.locator("input[type='password']").fill(logindata.password)
+    await page.locator("input[type='password']").fill(process.env.ORG_PASSWORD)
 
     await page.locator("button[type='submit']").click()
 

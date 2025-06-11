@@ -23,7 +23,7 @@ export default defineConfig({
 
     timeout: 30000, // 5 sec
   },
-  testDir: './tests',
+  testDir: './e2e',
   /* Run tests in files in parallel */
 
   fullyParallel: true,

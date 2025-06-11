@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\learnPlaywrightB29\\playwright.config.js",
-    "rootDir": "D:/learnPlaywrightB29/tests",
+    "configFile": "D:\\learnPlaywrightB29\\qa.playwright.config.js",
+    "rootDir": "D:/learnPlaywrightB29/e2e",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -39,66 +39,248 @@
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/learnPlaywrightB29/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/learnPlaywrightB29/test-results",
+        "repeatEach": 1,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
         "id": "Google Chrome",
         "name": "Google Chrome",
-        "testDir": "D:/learnPlaywrightB29/tests",
+        "testDir": "D:/learnPlaywrightB29/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 60000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.52.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
+      "title": "example.spec.js",
+      "file": "example.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Login with Valid Credential",
+          "title": "has title",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7193,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-11T05:31:21.909Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
+          "file": "example.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3158,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-11T05:31:30.579Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
+          "file": "example.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "Google Chrome",
               "projectName": "Google Chrome",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7605,
+                  "duration": 3506,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-10T05:23:37.148Z",
+                  "startTime": "2025-06-11T05:31:37.856Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-Google-Chrome\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "badc1754af1944f68b2b-10beeedd772ce2ec3c5f",
-          "file": "login.spec.js",
-          "line": 5,
+          "id": "dd9b2edffe9b7501040c-b268178a4669ef8cf4d9",
+          "file": "example.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4000,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-11T05:31:42.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-befff9ed1b7e99a6d05d",
+          "file": "example.spec.js",
+          "line": 11,
           "column": 5
         }
       ]
@@ -106,9 +288,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-10T05:23:33.289Z",
-    "duration": 12758.814000000013,
-    "expected": 1,
+    "startTime": "2025-06-11T05:31:19.639Z",
+    "duration": 28499.693000000003,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
