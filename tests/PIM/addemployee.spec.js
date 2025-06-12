@@ -20,3 +20,13 @@ test('Verify Add Employee', async ({ page }) => {
   await page.getByRole('button', { name: 'Save' }).click();
   await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();
 });
+
+
+// page.locator(xpath/ CSS)
+// page.getByRole('button', { name: 'Save' })
+// page.getBytext()
+// page.getBylabel()
+// page.getByPlaceHolder()
+
+// await page.locator("input[name='username']").fill("Admin")
+// await page.getByPlaceholder("Username").fill("Admin")

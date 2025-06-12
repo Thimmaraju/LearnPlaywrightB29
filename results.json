@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\learnPlaywrightB29\\qa.playwright.config.js",
-    "rootDir": "D:/learnPlaywrightB29/e2e",
+    "configFile": "D:\\learnPlaywrightB29\\playwright.config.js",
+    "rootDir": "D:/learnPlaywrightB29/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -39,13 +39,13 @@
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/learnPlaywrightB29/e2e",
+        "testDir": "D:/learnPlaywrightB29/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -55,13 +55,13 @@
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "id": "Google Chrome",
         "name": "Google Chrome",
-        "testDir": "D:/learnPlaywrightB29/e2e",
+        "testDir": "D:/learnPlaywrightB29/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -71,120 +71,20 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.52.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "example.spec.js",
-      "file": "example.spec.js",
+      "title": "login.spec.js",
+      "file": "login.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 7193,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-11T05:31:21.909Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
-          "file": "example.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3158,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-11T05:31:30.579Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
-          "file": "example.spec.js",
-          "line": 11,
-          "column": 5
-        },
-        {
-          "title": "has title",
+          "title": "Verify Login with Valid Credential",
           "ok": true,
           "tags": [],
           "tests": [
@@ -196,45 +96,29 @@
               "projectName": "Google Chrome",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3506,
+                  "duration": 8802,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-11T05:31:37.856Z",
+                  "startTime": "2025-06-12T03:51:53.185Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-Google-Chrome\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-Google-Chrome\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-has-title-Google-Chrome\\trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "dd9b2edffe9b7501040c-b268178a4669ef8cf4d9",
-          "file": "example.spec.js",
-          "line": 4,
+          "id": "badc1754af1944f68b2b-10beeedd772ce2ec3c5f",
+          "file": "login.spec.js",
+          "line": 5,
           "column": 5
         },
         {
-          "title": "get started link",
+          "title": "Verify Login with Valid Username and Invalid Password",
           "ok": true,
           "tags": [],
           "tests": [
@@ -246,31 +130,21 @@
               "projectName": "Google Chrome",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4000,
+                  "duration": 5826,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-11T05:31:42.525Z",
+                  "startTime": "2025-06-12T03:52:03.285Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-Google-Chrome\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-Google-Chrome\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\example-get-started-link-Google-Chrome\\trace.zip"
+                      "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-Login-with-Valid-Username-and-Invalid-Password-Google-Chrome\\test-finished-1.png"
                     }
                   ]
                 }
@@ -278,9 +152,89 @@
               "status": "expected"
             }
           ],
-          "id": "dd9b2edffe9b7501040c-befff9ed1b7e99a6d05d",
-          "file": "example.spec.js",
-          "line": 11,
+          "id": "badc1754af1944f68b2b-e13d8f67b37bc031f2ea",
+          "file": "login.spec.js",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "Verify login with Invalid Username and InValid Password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5117,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-12T03:52:09.166Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-with-In-786f6-ername-and-InValid-Password-Google-Chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-3e32d8ea225179935b10",
+          "file": "login.spec.js",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "Verify login with Invalid Username and Valid Password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4820,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-12T03:52:14.301Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-with-Invalid-Username-and-Valid-Password-Google-Chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-ce24ab7b5cc519ce2b09",
+          "file": "login.spec.js",
+          "line": 60,
           "column": 5
         }
       ]
@@ -288,8 +242,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-11T05:31:19.639Z",
-    "duration": 28499.693000000003,
+    "startTime": "2025-06-12T03:51:46.547Z",
+    "duration": 32633.44099999999,
     "expected": 4,
     "skipped": 0,
     "unexpected": 0,
