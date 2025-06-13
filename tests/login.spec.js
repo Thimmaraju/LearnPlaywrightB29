@@ -4,12 +4,13 @@ import logindata from "../testData/login.json"
 
 test("Verify Login with Valid Credential", async ({page})=>{
    const username = "Admin"
+   const password = "admin123"
     //Actions 
     await page.goto("/web/index.php/auth/login")
 
     await page.locator(`input[name='username']`).fill(username)
 
-    await page.locator("input[type='password']").fill(process.env.ORG_PASSWORD)
+    await page.locator("input[type='password']").fill(password)
 
     await page.locator("button[type='submit']").click()
 

@@ -2,11 +2,17 @@ const { test, expect } = require('@playwright/test');
 import data from "../../testData/addjobtitle.json"
 
 test.describe('Add Job Title Feature', () => {
+
+    const creds = {
+
+        username : "Admin",
+        password : "admin123"
+    }
     test('TC1223 - should add a new job title successfully', async ({ page }) => {
 
         await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-        await page.locator(`input[name='username']`).fill(process.env.ORG_USERNAME)
-        await page.locator("input[type='password']").fill(process.env.ORG_PASSWORD)
+        await page.locator(`input[name='username']`).fill(creds.username)
+        await page.locator("input[type='password']").fill(creds.password)
         await page.locator("button[type='submit']").click()
 
         // Assertions
