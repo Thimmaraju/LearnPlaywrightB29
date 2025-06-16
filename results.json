@@ -59,6 +59,38 @@
         "metadata": {
           "actualWorkers": 1
         },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/learnPlaywrightB29/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/learnPlaywrightB29/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/learnPlaywrightB29/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/learnPlaywrightB29/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
         "id": "Google Chrome",
         "name": "Google Chrome",
         "testDir": "D:/learnPlaywrightB29/tests",
@@ -78,13 +110,13 @@
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
+      "title": "PIM\\checkboxes.spec.js",
+      "file": "PIM/checkboxes.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Login with Valid Credential",
+          "title": "Verify Add Employee",
           "ok": true,
           "tags": [],
           "tests": [
@@ -92,149 +124,35 @@
               "timeout": 60000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "Google Chrome",
-              "projectName": "Google Chrome",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8802,
+                  "duration": 12299,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-12T03:51:53.185Z",
+                  "startTime": "2025-06-16T05:29:50.521Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\PIM-checkboxes-Verify-Add-Employee-chromium\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "badc1754af1944f68b2b-10beeedd772ce2ec3c5f",
-          "file": "login.spec.js",
+          "id": "41a4b2ef1bf6b1af6b7e-868672047992c803e6f6",
+          "file": "PIM/checkboxes.spec.js",
           "line": 5,
-          "column": 5
-        },
-        {
-          "title": "Verify Login with Valid Username and Invalid Password",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Google Chrome",
-              "projectName": "Google Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5826,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-12T03:52:03.285Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-Login-with-Valid-Username-and-Invalid-Password-Google-Chrome\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "badc1754af1944f68b2b-e13d8f67b37bc031f2ea",
-          "file": "login.spec.js",
-          "line": 26,
-          "column": 5
-        },
-        {
-          "title": "Verify login with Invalid Username and InValid Password",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Google Chrome",
-              "projectName": "Google Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5117,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-12T03:52:09.166Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-with-In-786f6-ername-and-InValid-Password-Google-Chrome\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "badc1754af1944f68b2b-3e32d8ea225179935b10",
-          "file": "login.spec.js",
-          "line": 44,
-          "column": 5
-        },
-        {
-          "title": "Verify login with Invalid Username and Valid Password",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Google Chrome",
-              "projectName": "Google Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4820,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-12T03:52:14.301Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-with-Invalid-Username-and-Valid-Password-Google-Chrome\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "badc1754af1944f68b2b-ce24ab7b5cc519ce2b09",
-          "file": "login.spec.js",
-          "line": 60,
           "column": 5
         }
       ]
@@ -242,9 +160,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-12T03:51:46.547Z",
-    "duration": 32633.44099999999,
-    "expected": 4,
+    "startTime": "2025-06-16T05:29:43.637Z",
+    "duration": 20611.992000000086,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
