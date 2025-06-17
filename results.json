@@ -110,13 +110,13 @@
   },
   "suites": [
     {
-      "title": "PIM\\checkboxes.spec.js",
-      "file": "PIM/checkboxes.spec.js",
+      "title": "Admin\\datadriventesting.spec.js",
+      "file": "Admin/datadriventesting.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Add Employee",
+          "title": "example for looping test data - DDT - CEO ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -128,21 +128,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 12299,
+                  "duration": 18539,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-16T05:29:50.521Z",
+                  "startTime": "2025-06-17T05:08:32.885Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\PIM-checkboxes-Verify-Add-Employee-chromium\\test-finished-1.png"
+                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadriventesting-ex-07cdd-ping-test-data---DDT---CEO--chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -150,9 +150,89 @@
               "status": "expected"
             }
           ],
-          "id": "41a4b2ef1bf6b1af6b7e-868672047992c803e6f6",
-          "file": "PIM/checkboxes.spec.js",
-          "line": 5,
+          "id": "2b24af648340378ebd71-8dde38ecddd4dec3fae1",
+          "file": "Admin/datadriventesting.spec.js",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "example for looping test data - DDT - CFO ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15973,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-17T05:08:51.580Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadriventesting-ex-72ade-ping-test-data---DDT---CFO--chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2b24af648340378ebd71-902b0b0bbfdeaabc5b17",
+          "file": "Admin/datadriventesting.spec.js",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "example for looping test data - DDT - COO ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24645,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-17T05:09:07.578Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadriventesting-ex-79c37-ping-test-data---DDT---COO--chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2b24af648340378ebd71-3d0aa7a689994d68c629",
+          "file": "Admin/datadriventesting.spec.js",
+          "line": 14,
           "column": 5
         }
       ]
@@ -160,9 +240,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-16T05:29:43.637Z",
-    "duration": 20611.992000000086,
-    "expected": 1,
+    "startTime": "2025-06-17T05:08:28.845Z",
+    "duration": 63496.18100000033,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
