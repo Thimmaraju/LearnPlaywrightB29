@@ -53,7 +53,7 @@ menuitems = {
 for(let item in menuitems){
 
     console.log("loop starts ")
-    console.log(menuitems[item])
+    console.log(item)
     console.log("loop Ends ")
 }
 
@@ -67,10 +67,10 @@ for(let item in menuitems){
 
 // }
 
-str1 = "Raju"
+// str1 = "Raju"
 
-str2 = "Purushottam"
+// str2 = "Purushottam"
 
-str3 = `${str1} and ${str2} are friends`
+// str3 = `${str1} and ${str2} are friends`
 
-console.log(str3)
+// console.log(str3)
