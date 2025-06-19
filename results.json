@@ -110,13 +110,13 @@
   },
   "suites": [
     {
-      "title": "PIM\\datadriventestingeex2.spec.js",
-      "file": "PIM/datadriventestingeex2.spec.js",
+      "title": "Admin\\datadrivenwitharrauy.spec.js",
+      "file": "Admin/datadrivenwitharrauy.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Add employee test - emp1 ",
+          "title": "example for looping test data - DDT - Raju ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -131,18 +131,18 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 18683,
+                  "duration": 51503,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-18T04:26:09.673Z",
+                  "startTime": "2025-06-19T05:15:36.658Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\PIM-datadriventestingeex2-Add-employee-test---emp1--chromium\\test-finished-1.png"
+                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadrivenwitharrauy-8799f-ing-test-data---DDT---Raju--chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -150,13 +150,13 @@
               "status": "expected"
             }
           ],
-          "id": "f71401e07bafa13a54b9-d8c45c4eeb7da9bfcaa5",
-          "file": "PIM/datadriventestingeex2.spec.js",
-          "line": 22,
+          "id": "825f3157f598d007aea5-16b82adc3784196f8dd9",
+          "file": "Admin/datadrivenwitharrauy.spec.js",
+          "line": 13,
           "column": 9
         },
         {
-          "title": "Add employee test - emp2 ",
+          "title": "example for looping test data - DDT - Shiva ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -171,18 +171,18 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14063,
+                  "duration": 27942,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-06-18T04:26:29.835Z",
+                  "startTime": "2025-06-19T05:16:28.365Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\PIM-datadriventestingeex2-Add-employee-test---emp2--chromium\\test-finished-1.png"
+                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadrivenwitharrauy-8175d-ng-test-data---DDT---Shiva--chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -190,9 +190,49 @@
               "status": "expected"
             }
           ],
-          "id": "f71401e07bafa13a54b9-fe5ca7fef847cacfa68f",
-          "file": "PIM/datadriventestingeex2.spec.js",
-          "line": 22,
+          "id": "825f3157f598d007aea5-cf8ee41b698a9720f642",
+          "file": "Admin/datadrivenwitharrauy.spec.js",
+          "line": 13,
+          "column": 9
+        },
+        {
+          "title": "example for looping test data - DDT - Gagan ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-19T05:16:56.336Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadrivenwitharrauy-7e026-ng-test-data---DDT---Gagan--chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "825f3157f598d007aea5-16dd0af6926518ce20c2",
+          "file": "Admin/datadrivenwitharrauy.spec.js",
+          "line": 13,
           "column": 9
         }
       ]
@@ -200,9 +240,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-18T04:26:04.486Z",
-    "duration": 39538.54800000001,
-    "expected": 2,
+    "startTime": "2025-06-19T05:15:30.289Z",
+    "duration": 117484.503,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
