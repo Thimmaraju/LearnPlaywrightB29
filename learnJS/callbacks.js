@@ -12,11 +12,11 @@
 
 
 
-setTimeout( () => {
+// setTimeout( () => {
 
-    console.log("Mohan")
+//     console.log("Mohan")
 
-}, 3000);
+// }, 3000);
 
 //  console.log("Raju")
 
@@ -40,7 +40,7 @@ setTimeout( () => {
 // Passing the Function: The function you want to run after some operation is passed as an argument to another function.
 
 // Executing the Callback: The main function executes the callback function at the appropriate time. 
-// This can be after a delay, once a task is complete, or when an event occurs.
+// // This can be after a delay, once a task is complete, or when an event occurs.
 
 
 // function myDisplayer(some) {
@@ -49,7 +49,7 @@ setTimeout( () => {
 
 
 
-//   function squrethesum(num1){
+//   function squrethenum(num1){
 
 //     console.log(num1*num1)
 //   }
@@ -65,7 +65,7 @@ setTimeout( () => {
 //      callback(sum) // closure function 
 //   }
 
-//  myCalculator(5, 5, myDisplayer)
+//   myCalculator(5, 5, numbytwo)
 
 // //  Manoj 
 // //  (callback)
@@ -95,25 +95,25 @@ setTimeout( () => {
 
 // //   //=================================================================
 
-//   let numbers = [1, 2, 3, 4, 5];
+   let numbers = [1, 2, 3, 4, 5];
 
-//   function processArray(arr, callback) {
-//     for (let i = 0; i < arr.length; i++) {
-//       callback(arr[i]); 
-//     }
-//   }
+  function processArray(arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+      callback(arr[i]); 
+    }
+  }
 
-//   function devidewith2(number) {
-//     console.log(number / 2);
-//   }
+  function devidewith2(number) {
+    console.log(number / 2);
+  }
 
-//   function doubleAndPrint(number) {
-//     console.log(number * 2);
-//   }
+  function doubleAndPrint(number) {
+    console.log(number * 2);
+  }
 
-//    processArray(numbers, devidewith2 ) // 0.5, 1,
+    //processArray(numbers, devidewith2 ) // 0.5, 1,
 
-//    processArray(numbers, doubleAndPrint)
+    //processArray(numbers, doubleAndPrint)
 
 //processArray(numbers, devidewith2)
 
@@ -143,7 +143,7 @@ setTimeout( () => {
 
 //   // map(), filter(), reduce() these methods will use anonymous functions (or arrow functions) as callbacks.
 
-//  let arr2 = [1, 2, 3, 4, 5];
+  // arr2 = [1, 2, 3, 4, 5];
 
 // doubled = arr2.map(function(number) {
 //   return number / 2 
@@ -158,8 +158,10 @@ setTimeout( () => {
 
 // // filter
 
-// let evenNumbers = numbers.filter(number => number % 2 === 0);
-// console.log(evenNumbers); 
+  let arr2 = [1, 2, 3, 4, 5];
+
+let evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log(evenNumbers); 
 
 // //reduce 
 
