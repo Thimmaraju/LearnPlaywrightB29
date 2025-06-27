@@ -30,3 +30,52 @@ test('Verify Add Employee', async ({ page }) => {
 
 // await page.locator("input[name='username']").fill("Admin")
 // await page.getByPlaceholder("Username").fill("Admin")
+
+// Regualr expression 
+// Set 
+// Map
+
+//----------------------------------------------------
+
+// Part 1
+// Manual 
+
+// Agile 
+
+// API testing 
+// SQL 
+
+// Part2 
+// Automation
+
+// Javascript 
+// Playwright
+
+// programs 
+
+// str = "Javascript"
+
+
+
+// str = "madam"
+
+// revstr = str.split("").reverse().join("")
+
+// if(str == revstr){
+
+//   console.log("Palindrom")
+// }
+
+// str1 = "mary"  // arry / sort /join  - amry
+// str2 = "army"  // arry /sort / join  - amry
+
+// arr = [34,56,76,54,87,9]
+
+// arr = [2,5,6,2,3,4,5,3,6,2]
+
+// //new arry 
+
+// str = "this is a sentence"
+
+// await page.locator(xpth).pressSequenctially("Raju", {delay: 3000})
+

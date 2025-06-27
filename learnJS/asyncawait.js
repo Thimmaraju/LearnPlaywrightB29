@@ -20,24 +20,24 @@
 
 // // //=====================================================
 
-// async function myFunction() {
-//     return "Hello";
-//   }
+async function myFunction() {
+    return "Hello";
+  }
 
 
 // // //or
-// function myFunction() {
-//     return Promise.resolve("Hello");
-//   }
+function myFunction() {
+    return Promise.resolve("Hello");
+  }
 
 //===============================================
 
-// const getData = async () => {
-//     let y = await "Hello World";
-//     console.log(y);
-// }
+const getData = async () => {
+    let y = await "Hello World";
+    console.log(y);
+}
 
-// getData();
+ getData();
 
 
 //=======================================================================

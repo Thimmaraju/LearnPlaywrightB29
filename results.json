@@ -50,7 +50,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 60000
+        "timeout": 30000
       },
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
@@ -66,7 +66,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 60000
+        "timeout": 30000
       },
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
@@ -82,7 +82,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 60000
+        "timeout": 30000
       },
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
@@ -98,7 +98,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 60000
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -110,141 +110,214 @@
   },
   "suites": [
     {
-      "title": "Admin\\datadrivenwitharrauy.spec.js",
-      "file": "Admin/datadrivenwitharrauy.spec.js",
+      "title": "login.spec.js",
+      "file": "login.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "example for looping test data - DDT - Raju ",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Verify login funtionality",
+          "file": "login.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Verify Login with Valid Credential",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 51503,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-19T05:15:36.658Z",
-                  "annotations": [],
-                  "attachments": [
+                  "timeout": 30000,
+                  "annotations": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadrivenwitharrauy-8799f-ing-test-data---DDT---Raju--chromium\\test-finished-1.png"
+                      "type": "fixme"
                     }
-                  ]
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 2883,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-27T05:26:08.752Z",
+                      "annotations": [
+                        {
+                          "type": "fixme"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-4590d-Login-with-Valid-Credential-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
                 }
               ],
-              "status": "expected"
-            }
-          ],
-          "id": "825f3157f598d007aea5-16b82adc3784196f8dd9",
-          "file": "Admin/datadrivenwitharrauy.spec.js",
-          "line": 13,
-          "column": 9
-        },
-        {
-          "title": "example for looping test data - DDT - Shiva ",
-          "ok": true,
-          "tags": [],
-          "tests": [
+              "id": "badc1754af1944f68b2b-8e4bc149e0d143c1f81d",
+              "file": "login.spec.js",
+              "line": 7,
+              "column": 9
+            },
             {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Verify Login with Valid Username and Invalid Password",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 27942,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-19T05:16:28.365Z",
-                  "annotations": [],
-                  "attachments": [
+                  "timeout": 90000,
+                  "annotations": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadrivenwitharrauy-8175d-ng-test-data---DDT---Shiva--chromium\\test-finished-1.png"
+                      "type": "slow"
                     }
-                  ]
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11675,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-27T05:26:11.803Z",
+                      "annotations": [
+                        {
+                          "type": "slow"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-216c4-ername-and-Invalid-Password-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
-            }
-          ],
-          "id": "825f3157f598d007aea5-cf8ee41b698a9720f642",
-          "file": "Admin/datadrivenwitharrauy.spec.js",
-          "line": 13,
-          "column": 9
-        },
-        {
-          "title": "example for looping test data - DDT - Gagan ",
-          "ok": true,
-          "tags": [],
-          "tests": [
+              "id": "badc1754af1944f68b2b-2b5cf8b7beaeb7e2d146",
+              "file": "login.spec.js",
+              "line": 31,
+              "column": 9
+            },
             {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Verify login with Invalid Username and InValid Password",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 31276,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-06-19T05:16:56.336Z",
-                  "annotations": [],
-                  "attachments": [
+                  "timeout": 30000,
+                  "annotations": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\learnPlaywrightB29\\test-results\\Admin-datadrivenwitharrauy-7e026-ng-test-data---DDT---Gagan--chromium\\test-finished-1.png"
+                      "type": "fail"
                     }
-                  ]
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5600,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-27T05:26:23.538Z",
+                      "annotations": [
+                        {
+                          "type": "fail"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-2ae51-ername-and-InValid-Password-chromium\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "id": "badc1754af1944f68b2b-0ba2d84568b8222caa15",
+              "file": "login.spec.js",
+              "line": 50,
+              "column": 9
+            },
+            {
+              "title": "Verify login with Invalid Username and Valid Password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5854,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-27T05:26:32.453Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-330a7-Username-and-Valid-Password-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-2ccd41d2114c74255705",
+              "file": "login.spec.js",
+              "line": 67,
+              "column": 9
             }
-          ],
-          "id": "825f3157f598d007aea5-16dd0af6926518ce20c2",
-          "file": "Admin/datadrivenwitharrauy.spec.js",
-          "line": 13,
-          "column": 9
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-19T05:15:30.289Z",
-    "duration": 117484.503,
-    "expected": 3,
-    "skipped": 0,
-    "unexpected": 0,
+    "startTime": "2025-06-27T05:26:01.123Z",
+    "duration": 37391.49099999998,
+    "expected": 2,
+    "skipped": 1,
+    "unexpected": 1,
     "flaky": 0
   }
 }

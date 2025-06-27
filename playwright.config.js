@@ -18,7 +18,7 @@ export default defineConfig({
   globalTimeout: 60 * 60 *1000,  // 3600000
 
 
-  timeout : 60000,  // 30 sec 
+  //timeout : 60000,  // 30 sec 
   expect: {
 
     timeout: 30000, // 5 sec
