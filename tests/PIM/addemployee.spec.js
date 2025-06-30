@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 import data from "../../testData/addemployee.json"
 
 const creds = ["Admin", "Admin123"]
-test('Verify Add Employee', async ({ page }) => {
+test('Verify Add Employee',{tag: ["@smoke", "@raju"]}, async ({ page }) => {
   await page.goto('/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
   await page.getByRole('textbox', { name: 'Username' }).fill(creds[0]);

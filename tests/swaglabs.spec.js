@@ -19,7 +19,7 @@ test('Verify login with vaid creds', async ({ page }) => {
 });
 
 
-test('Verify login with invalid creds', async ({ page }) => {
+test('Verify login with invalid creds',{tag: "@raju"}, async ({ page }) => {
   await page.goto('https://www.saucedemo.com/v1/index.html');
   await page.locator('[data-test="username"]').click();
   await page.locator('[data-test="username"]').fill('standard_user');

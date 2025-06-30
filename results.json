@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -39,58 +37,8 @@
       {
         "outputDir": "D:/learnPlaywrightB29/test-results",
         "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "D:/learnPlaywrightB29/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "D:/learnPlaywrightB29/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "D:/learnPlaywrightB29/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "D:/learnPlaywrightB29/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "D:/learnPlaywrightB29/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "D:/learnPlaywrightB29/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "retries": 1,
+        "metadata": {},
         "id": "Google Chrome",
         "name": "Google Chrome",
         "testDir": "D:/learnPlaywrightB29/tests",
@@ -103,12 +51,437 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.52.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
+    {
+      "title": "Admin\\addjobtitle.spec.js",
+      "file": "Admin/addjobtitle.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC1223 - should add a new job title successfully",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "077616bb49b58368103b-67efbbef8164b4d89117",
+          "file": "Admin/addjobtitle.spec.js",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Admin\\addjobtitlehooks.spec.js",
+      "file": "Admin/addjobtitlehooks.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add job title fileds max chars limit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1694246e235211d392e1-eb98299e2095cf89efe8",
+          "file": "Admin/addjobtitlehooks.spec.js",
+          "line": 89,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "Admin\\datadriventesting.spec.js",
+      "file": "Admin/datadriventesting.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "example for looping test data - DDT - CEO ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "2b24af648340378ebd71-211af1b35b5e6b1ca00c",
+          "file": "Admin/datadriventesting.spec.js",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "example for looping test data - DDT - CFO ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "2b24af648340378ebd71-1e5acdb4bd697f3bb4a2",
+          "file": "Admin/datadriventesting.spec.js",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "example for looping test data - DDT - COO ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "2b24af648340378ebd71-5a7f57bfc4ccef2ffc3b",
+          "file": "Admin/datadriventesting.spec.js",
+          "line": 14,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Admin\\datadrivenwitharrauy.spec.js",
+      "file": "Admin/datadrivenwitharrauy.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "example for looping test data - DDT - Raju ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "825f3157f598d007aea5-f302bf9f96a69aa3fd6a",
+          "file": "Admin/datadrivenwitharrauy.spec.js",
+          "line": 13,
+          "column": 9
+        },
+        {
+          "title": "example for looping test data - DDT - Shiva ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "825f3157f598d007aea5-9bc2b8116c5c7d79abf5",
+          "file": "Admin/datadrivenwitharrauy.spec.js",
+          "line": 13,
+          "column": 9
+        },
+        {
+          "title": "example for looping test data - DDT - Gagan ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "825f3157f598d007aea5-03cf996d8a7f395e9542",
+          "file": "Admin/datadrivenwitharrauy.spec.js",
+          "line": 13,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "buzz_post.spec.js",
+      "file": "buzz_post.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "OrangeHRM Buzz post as Admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ab75720b84a778e950f5-48690e82426cc6130a53",
+          "file": "buzz_post.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "conditionaltesting.spec.js",
+      "file": "conditionaltesting.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Based on BrowserName run different script",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "755c260cb58bb34020f9-1030fb729431e5450dff",
+          "file": "conditionaltesting.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Based on BrowserName run different script2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "755c260cb58bb34020f9-cd03cedc562d271bf8ed",
+          "file": "conditionaltesting.spec.js",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "Based on Env run different script",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "755c260cb58bb34020f9-737fe96f244bd39857ff",
+          "file": "conditionaltesting.spec.js",
+          "line": 62,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "example.spec.js",
+      "file": "example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-b268178a4669ef8cf4d9",
+          "file": "example.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hooks.spec.js",
+      "file": "hooks.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": " Group 1",
+          "file": "hooks.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test1 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f20989dab5cd91a66559-7dfbd29ab029607ecd8f",
+              "file": "hooks.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "test2 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f20989dab5cd91a66559-e225e95a5fba2c41da41",
+              "file": "hooks.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "test3 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f20989dab5cd91a66559-6d5bf64a4c0f0926787a",
+              "file": "hooks.spec.js",
+              "line": 38,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": " Group 2",
+          "file": "hooks.spec.js",
+          "line": 47,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test5 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f20989dab5cd91a66559-be2cba4fc44521a8b345",
+              "file": "hooks.spec.js",
+              "line": 55,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
     {
       "title": "login.spec.js",
       "file": "login.spec.js",
@@ -129,43 +502,15 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "fixme"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "skipped",
-                      "duration": 2883,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-27T05:26:08.752Z",
-                      "annotations": [
-                        {
-                          "type": "fixme"
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-4590d-Login-with-Valid-Credential-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
                   "status": "skipped"
                 }
               ],
-              "id": "badc1754af1944f68b2b-8e4bc149e0d143c1f81d",
+              "id": "badc1754af1944f68b2b-286af5d37938c23e5364",
               "file": "login.spec.js",
               "line": 7,
               "column": 9
@@ -176,92 +521,36 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow"
-                    }
-                  ],
+                  "timeout": 30000,
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 11675,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-27T05:26:11.803Z",
-                      "annotations": [
-                        {
-                          "type": "slow"
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-216c4-ername-and-Invalid-Password-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "badc1754af1944f68b2b-2b5cf8b7beaeb7e2d146",
+              "id": "badc1754af1944f68b2b-1ee6e56a73b4d0cd682d",
               "file": "login.spec.js",
               "line": 31,
               "column": 9
             },
             {
               "title": "Verify login with Invalid Username and InValid Password",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "fail"
-                    }
-                  ],
-                  "expectedStatus": "failed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5600,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-27T05:26:23.538Z",
-                      "annotations": [
-                        {
-                          "type": "fail"
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-2ae51-ername-and-InValid-Password-chromium\\test-failed-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "badc1754af1944f68b2b-0ba2d84568b8222caa15",
+              "id": "badc1754af1944f68b2b-1cd1ee93f06ca6559193",
               "file": "login.spec.js",
               "line": 50,
               "column": 9
@@ -275,33 +564,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5854,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-27T05:26:32.453Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-330a7-Username-and-Valid-Password-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "badc1754af1944f68b2b-2ccd41d2114c74255705",
+              "id": "badc1754af1944f68b2b-cfed25cf91a9b86c3430",
               "file": "login.spec.js",
               "line": 67,
               "column": 9
@@ -309,15 +578,491 @@
           ]
         }
       ]
+    },
+    {
+      "title": "PIM\\checkboxes.spec.js",
+      "file": "PIM/checkboxes.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Employee",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "41a4b2ef1bf6b1af6b7e-f1572144a28fe5fbc462",
+          "file": "PIM/checkboxes.spec.js",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "PIM\\datadriventestingeex2.spec.js",
+      "file": "PIM/datadriventestingeex2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Add employee test - emp1 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "f71401e07bafa13a54b9-15b93394c3b0bf052f3b",
+          "file": "PIM/datadriventestingeex2.spec.js",
+          "line": 22,
+          "column": 9
+        },
+        {
+          "title": "Add employee test - emp2 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "f71401e07bafa13a54b9-6ebbf29beb7c1442a621",
+          "file": "PIM/datadriventestingeex2.spec.js",
+          "line": 22,
+          "column": 9
+        }
+      ]
+    },
+    {
+      "title": "PIM\\groupingtests.spec.js",
+      "file": "PIM/groupingtests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Group 1 ",
+          "file": "PIM/groupingtests.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test1 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-ebc7db9ff23063fc6857",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 7,
+              "column": 10
+            },
+            {
+              "title": "test2 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-9f3029ce1a270a39820c",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 12,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "Group 2 ",
+          "file": "PIM/groupingtests.spec.js",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test3 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-cf22b0c56873a4123836",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 24,
+              "column": 10
+            },
+            {
+              "title": "test4 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-4c25d190bc595b8dd917",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "test5 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-247459199ea13b66102c",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 33,
+              "column": 11
+            },
+            {
+              "title": "test6 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-9733e1b4039d6da3dca5",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 38,
+              "column": 6
+            },
+            {
+              "title": "test7 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-8163eff9ed3315b2ae14",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 44,
+              "column": 6
+            },
+            {
+              "title": "test8 ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9db20e238fc8ac7ef327-ae7e376326e865e33be4",
+              "file": "PIM/groupingtests.spec.js",
+              "line": 49,
+              "column": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "rahulshettyacademy.spec.js",
+      "file": "rahulshettyacademy.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Rahul Shetty Academy Practice Page",
+          "file": "rahulshettyacademy.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Radio button selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-62bcc0187a3bbf676c8e",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "Suggestion box autocomplete",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-e7ca63e8fd21f28dcd25",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "Dropdown selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-2d10f46b9cb2b09d83cd",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "Checkbox selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-91aaf10aefcf037444c6",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 44,
+              "column": 3
+            },
+            {
+              "title": "Alert and confirm popups",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-6f33f878dbd76f00f7f6",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "Show and hide element",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-3a55d5f52a33253962d2",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "Web table validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fdeb7c6aaaab2923412-4e843f6f25c02a792253",
+              "file": "rahulshettyacademy.spec.js",
+              "line": 73,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "swaglabs.spec.js",
+      "file": "swaglabs.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify login with vaid creds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8f0c16a883c5bf566337-80a739435083ed0a9979",
+          "file": "swaglabs.spec.js",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Verify login with invalid creds",
+          "ok": true,
+          "tags": [
+            "raju"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8f0c16a883c5bf566337-c0c1300125c3b8ae4cca",
+          "file": "swaglabs.spec.js",
+          "line": 22,
+          "column": 5
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-27T05:26:01.123Z",
-    "duration": 37391.49099999998,
-    "expected": 2,
-    "skipped": 1,
-    "unexpected": 1,
+    "startTime": "2025-06-30T05:26:53.714Z",
+    "duration": 112.07400000000007,
+    "expected": 0,
+    "skipped": 41,
+    "unexpected": 0,
     "flaky": 0
   }
 }
