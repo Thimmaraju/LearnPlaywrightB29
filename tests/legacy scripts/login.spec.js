@@ -4,17 +4,17 @@ import logindata from "../../testData/login.json"
 
 test.describe("Verify login funtionality", async () => {
 
-    test("Verify Login with Valid Credential", async ({ page }) => {
+    test.only("Verify Login with Valid Credential", async ({ page }) => {
 
-        test.fixme()
+       // test.fixme()
         const username = "Admin"
         const password = "admin123"
         //Actions 
         await page.goto("/web/index.php/auth/login")
 
-        await page.locator(`input[name='username']`).fill(username)
+        await page.locator(`input[name='username']`).pressSequentially(username, {delay: 0} )
 
-        await page.locator("input[type='password']").fill(password)
+        await page.locator("input[type='password']").pressSequentially(password)
 
         await page.locator("button[type='submit']").click()
 
@@ -22,6 +22,8 @@ test.describe("Verify login funtionality", async () => {
         await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
 
         await page.close()
+
+        
 
 
 

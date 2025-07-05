@@ -22,7 +22,7 @@ exports.loginPage = class loginPage{
 
     async loginwithcreds(usernmame, password ){
 
-        await this.usernameIput.fill(usernmame)
+        await this.usernameIput.type(usernmame)
         
         await this.passwordInput.fill(password)
         await this.loginButton.click()

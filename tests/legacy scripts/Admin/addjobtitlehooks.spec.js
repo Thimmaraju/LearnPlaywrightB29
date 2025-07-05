@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
-import data from "../../testdata/login.json"
-import jobtitledata from "../../testdata/addjobtitle.json"
+import data from "../../../testData/login.json"
+import jobtitledata from "../../../testData/addjobtitle.json"
 
 
 let page

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import data from "../../testData/addemployee.json"
+import data from "../../../testData/addemployee.json"
 
 const creds = ["Admin", "Admin123"]
 test('Verify Add Employee',{tag: ["@smoke", "@raju"]}, async ({ page }) => {

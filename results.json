@@ -62,123 +62,73 @@
   },
   "suites": [
     {
-      "title": "addemployee.spec.js",
-      "file": "addemployee.spec.js",
+      "title": "WWE\\checkbox.spec.js",
+      "file": "WWE/checkbox.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Verify login funtionality",
-          "file": "addemployee.spec.js",
-          "line": 11,
-          "column": 6,
-          "specs": [
+          "title": "Check box Example -2 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Verify creation of Employee",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10417,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 16026,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-03T05:28:38.175Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-47ee8-Verify-creation-of-Employee-Google-Chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-47ee8-Verify-creation-of-Employee-Google-Chrome\\trace.zip"
-                        }
-                      ]
+                      "text": "[\n  \u001b[36m<ref *1>\u001b[39m ElementHandle {\n    _events: [Object: null prototype] {},\n    _eventsCount: \u001b[33m0\u001b[39m,\n    _maxListeners: \u001b[33m0\u001b[39m,\n    _pendingHandlers: Map(0) {},\n    _platform: {\n      name: \u001b[32m'node'\u001b[39m,\n      boxedStackPrefixes: \u001b[36m[Function: boxedStackPrefixes]\u001b[39m,\n      calculateSha1: \u001b[36m[Function: calculateSha1]\u001b[39m,\n      colors: \u001b[36m[Object]\u001b[39m,\n      coreDir: \u001b[32m'D:\\\\learnPlaywrightB29\\\\node_modules\\\\playwright-core'\u001b[39m,\n      createGuid: \u001b[36m[Function: createGuid]\u001b[39m,\n      defaultMaxListeners: \u001b[36m[Function: defaultMaxListeners]\u001b[39m,\n      fs: \u001b[36m[Function: fs]\u001b[39m,\n      env: \u001b[36m[Object]\u001b[39m,\n      inspectCustom: \u001b[32mSymbol(nodejs.util.inspect.custom)\u001b[39m,\n      isDebugMode: \u001b[36m[Function: isDebugMode]\u001b[39m,\n      isJSDebuggerAttached: \u001b[36m[Function: isJSDebuggerAttached]\u001b[39m,\n      isLogEnabled: \u001b[36m[Function: isLogEnabled]\u001b[39m,\n      isUnderTest: \u001b[36m[Function: isUnderTest]\u001b[39m,\n      log: \u001b[36m[Function: log]\u001b[39m,\n      path: \u001b[36m[Function: path]\u001b[39m,\n      pathSeparator: \u001b[32m'\\\\'\u001b[39m,\n      showInternalStackFrames: \u001b[36m[Function: showInternalStackFrames]\u001b[39m,\n      streamFile: \u001b[36m[AsyncFunction: streamFile]\u001b[39m,\n      streamReadable: \u001b[36m[Function: streamReadable]\u001b[39m,\n      streamWritable: \u001b[36m[Function: streamWritable]\u001b[39m,\n      zones: \u001b[36m[Object]\u001b[39m\n    },\n    on: \u001b[36m[Function: addListener]\u001b[39m,\n    off: \u001b[36m[Function: removeListener]\u001b[39m,\n    _objects: Map(0) {},\n    _eventToSubscriptionMapping: Map(0) {},\n    _isInternalType: \u001b[33mfalse\u001b[39m,\n    _wasCollected: \u001b[33mfalse\u001b[39m,\n    _connection: Connection {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _lastId: \u001b[33m14\u001b[39m,\n      _callbacks: Map(0) {},\n      _isRemote: \u001b[33mfalse\u001b[39m,\n      _rawBuffers: \u001b[33mtrue\u001b[39m,\n      _tracingCount: \u001b[33m1\u001b[39m,\n      _instrumentation: {},\n      _localUtils: \u001b[36m[LocalUtils]\u001b[39m,\n      _rootObject: \u001b[36m[Root]\u001b[39m,\n      headers: [],\n      toImpl: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    _type: \u001b[32m'ElementHandle'\u001b[39m,\n    _guid: \u001b[32m'handle@dd9edc85398bbd85af6e8e2c8022a8b4'\u001b[39m,\n    _parent: Frame {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _eventToSubscriptionMapping: Map(0) {},\n      _isInternalType: \u001b[33mfalse\u001b[39m,\n      _wasCollected: \u001b[33mfalse\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _type: \u001b[32m'Frame'\u001b[39m,\n      _guid: \u001b[32m'frame@b36bf896463ae13e4a603ce320fd8dc9'\u001b[39m,\n      _parent: \u001b[36m[Page]\u001b[39m,\n      _instrumentation: {},\n      _logger: \u001b[90mundefined\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _parentFrame: \u001b[1mnull\u001b[22m,\n      _url: \u001b[32m'https://rahulshettyacademy.com/AutomationPractice/'\u001b[39m,\n      _name: \u001b[32m''\u001b[39m,\n      _detached: \u001b[33mfalse\u001b[39m,\n      _childFrames: \u001b[36m[Set]\u001b[39m,\n      _eventEmitter: \u001b[36m[EventEmitter]\u001b[39m,\n      _loadStates: \u001b[36m[Set]\u001b[39m,\n      _page: \u001b[36m[Page]\u001b[39m\n    },\n    _instrumentation: {},\n    _logger: \u001b[90mundefined\u001b[39m,\n    _channel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _object: \u001b[36m[Circular *1]\u001b[39m\n    },\n    _initializer: { preview: \u001b[32m'JSHandle@node'\u001b[39m },\n    _preview: \u001b[32m'JSHandle@<input value=\"option1\" type=\"checkbox\" id=\"checkBoxOption1\" name=\"checkBoxOption1\"/>'\u001b[39m,\n    _elementChannel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _object: \u001b[36m[Circular *1]\u001b[39m\n    }\n  },\n  \u001b[36m<ref *2>\u001b[39m ElementHandle {\n    _events: [Object: null prototype] {},\n    _eventsCount: \u001b[33m0\u001b[39m,\n    _maxListeners: \u001b[33m0\u001b[39m,\n    _pendingHandlers: Map(0) {},\n    _platform: {\n      name: \u001b[32m'node'\u001b[39m,\n      boxedStackPrefixes: \u001b[36m[Function: boxedStackPrefixes]\u001b[39m,\n      calculateSha1: \u001b[36m[Function: calculateSha1]\u001b[39m,\n      colors: \u001b[36m[Object]\u001b[39m,\n      coreDir: \u001b[32m'D:\\\\learnPlaywrightB29\\\\node_modules\\\\playwright-core'\u001b[39m,\n      createGuid: \u001b[36m[Function: createGuid]\u001b[39m,\n      defaultMaxListeners: \u001b[36m[Function: defaultMaxListeners]\u001b[39m,\n      fs: \u001b[36m[Function: fs]\u001b[39m,\n      env: \u001b[36m[Object]\u001b[39m,\n      inspectCustom: \u001b[32mSymbol(nodejs.util.inspect.custom)\u001b[39m,\n      isDebugMode: \u001b[36m[Function: isDebugMode]\u001b[39m,\n      isJSDebuggerAttached: \u001b[36m[Function: isJSDebuggerAttached]\u001b[39m,\n      isLogEnabled: \u001b[36m[Function: isLogEnabled]\u001b[39m,\n      isUnderTest: \u001b[36m[Function: isUnderTest]\u001b[39m,\n      log: \u001b[36m[Function: log]\u001b[39m,\n      path: \u001b[36m[Function: path]\u001b[39m,\n      pathSeparator: \u001b[32m'\\\\'\u001b[39m,\n      showInternalStackFrames: \u001b[36m[Function: showInternalStackFrames]\u001b[39m,\n      streamFile: \u001b[36m[AsyncFunction: streamFile]\u001b[39m,\n      streamReadable: \u001b[36m[Function: streamReadable]\u001b[39m,\n      streamWritable: \u001b[36m[Function: streamWritable]\u001b[39m,\n      zones: \u001b[36m[Object]\u001b[39m\n    },\n    on: \u001b[36m[Function: addListener]\u001b[39m,\n    off: \u001b[36m[Function: removeListener]\u001b[39m,\n    _objects: Map(0) {},\n    _eventToSubscriptionMapping: Map(0) {},\n    _isInternalType: \u001b[33mfalse\u001b[39m,\n    _wasCollected: \u001b[33mfalse\u001b[39m,\n    _connection: Connection {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _lastId: \u001b[33m14\u001b[39m,\n      _callbacks: Map(0) {},\n      _isRemote: \u001b[33mfalse\u001b[39m,\n      _rawBuffers: \u001b[33mtrue\u001b[39m,\n      _tracingCount: \u001b[33m1\u001b[39m,\n      _instrumentation: {},\n      _localUtils: \u001b[36m[LocalUtils]\u001b[39m,\n      _rootObject: \u001b[36m[Root]\u001b[39m,\n      headers: [],\n      toImpl: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    _type: \u001b[32m'ElementHandle'\u001b[39m,\n    _guid: \u001b[32m'handle@7c1665faf6fd3aa19e7f1d5b576e97ec'\u001b[39m,\n    _parent: Frame {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _eventToSubscriptionMapping: Map(0) {},\n      _isInternalType: \u001b[33mfalse\u001b[39m,\n      _wasCollected: \u001b[33mfalse\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _type: \u001b[32m'Frame'\u001b[39m,\n      _guid: \u001b[32m'frame@b36bf896463ae13e4a603ce320fd8dc9'\u001b[39m,\n      _parent: \u001b[36m[Page]\u001b[39m,\n      _instrumentation: {},\n      _logger: \u001b[90mundefined\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _parentFrame: \u001b[1mnull\u001b[22m,\n      _url: \u001b[32m'https://rahulshettyacademy.com/AutomationPractice/'\u001b[39m,\n      _name: \u001b[32m''\u001b[39m,\n      _detached: \u001b[33mfalse\u001b[39m,\n      _childFrames: \u001b[36m[Set]\u001b[39m,\n      _eventEmitter: \u001b[36m[EventEmitter]\u001b[39m,\n      _loadStates: \u001b[36m[Set]\u001b[39m,\n      _page: \u001b[36m[Page]\u001b[39m\n    },\n    _instrumentation: {},\n    _logger: \u001b[90mundefined\u001b[39m,\n    _channel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _object: \u001b[36m[Circular *2]\u001b[39m\n    },\n    _initializer: { preview: \u001b[32m'JSHandle@node'\u001b[39m },\n    _preview: \u001b[32m'JSHandle@<input value=\"option2\" type=\"checkbox\" id=\"checkBoxOption2\" name=\"checkBoxOption2\"/>'\u001b[39m,\n    _elementChannel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _object: \u001b[36m[Circular *2]\u001b[39m\n    }\n  },\n  \u001b[36m<ref *3>\u001b[39m ElementHandle {\n    _events: [Object: null prototype] {},\n    _eventsCount: \u001b[33m0\u001b[39m,\n    _maxListeners: \u001b[33m0\u001b[39m,\n    _pendingHandlers: Map(0) {},\n    _platform: {\n      name: \u001b[32m'node'\u001b[39m,\n      boxedStackPrefixes: \u001b[36m[Function: boxedStackPrefixes]\u001b[39m,\n      calculateSha1: \u001b[36m[Function: calculateSha1]\u001b[39m,\n      colors: \u001b[36m[Object]\u001b[39m,\n      coreDir: \u001b[32m'D:\\\\learnPlaywrightB29\\\\node_modules\\\\playwright-core'\u001b[39m,\n      createGuid: \u001b[36m[Function: createGuid]\u001b[39m,\n      defaultMaxListeners: \u001b[36m[Function: defaultMaxListeners]\u001b[39m,\n      fs: \u001b[36m[Function: fs]\u001b[39m,\n      env: \u001b[36m[Object]\u001b[39m,\n      inspectCustom: \u001b[32mSymbol(nodejs.util.inspect.custom)\u001b[39m,\n      isDebugMode: \u001b[36m[Function: isDebugMode]\u001b[39m,\n      isJSDebuggerAttached: \u001b[36m[Function: isJSDebuggerAttached]\u001b[39m,\n      isLogEnabled: \u001b[36m[Function: isLogEnabled]\u001b[39m,\n      isUnderTest: \u001b[36m[Function: isUnderTest]\u001b[39m,\n      log: \u001b[36m[Function: log]\u001b[39m,\n      path: \u001b[36m[Function: path]\u001b[39m,\n      pathSeparator: \u001b[32m'\\\\'\u001b[39m,\n      showInternalStackFrames: \u001b[36m[Function: showInternalStackFrames]\u001b[39m,\n      streamFile: \u001b[36m[AsyncFunction: streamFile]\u001b[39m,\n      streamReadable: \u001b[36m[Function: streamReadable]\u001b[39m,\n      streamWritable: \u001b[36m[Function: streamWritable]\u001b[39m,\n      zones: \u001b[36m[Object]\u001b[39m\n    },\n    on: \u001b[36m[Function: addListener]\u001b[39m,\n    off: \u001b[36m[Function: removeListener]\u001b[39m,\n    _objects: Map(0) {},\n    _eventToSubscriptionMapping: Map(0) {},\n    _isInternalType: \u001b[33mfalse\u001b[39m,\n    _wasCollected: \u001b[33mfalse\u001b[39m,\n    _connection: Connection {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _lastId: \u001b[33m14\u001b[39m,\n      _callbacks: Map(0) {},\n      _isRemote: \u001b[33mfalse\u001b[39m,\n      _rawBuffers: \u001b[33mtrue\u001b[39m,\n      _tracingCount: \u001b[33m1\u001b[39m,\n      _instrumentation: {},\n      _localUtils: \u001b[36m[LocalUtils]\u001b[39m,\n      _rootObject: \u001b[36m[Root]\u001b[39m,\n      headers: [],\n      toImpl: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    _type: \u001b[32m'ElementHandle'\u001b[39m,\n    _guid: \u001b[32m'handle@4ad77e145a166efc41c45dbcfa99aa9b'\u001b[39m,\n    _parent: Frame {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _eventToSubscriptionMapping: Map(0) {},\n      _isInternalType: \u001b[33mfalse\u001b[39m,\n      _wasCollected: \u001b[33mfalse\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _type: \u001b[32m'Frame'\u001b[39m,\n      _guid: \u001b[32m'frame@b36bf896463ae13e4a603ce320fd8dc9'\u001b[39m,\n      _parent: \u001b[36m[Page]\u001b[39m,\n      _instrumentation: {},\n      _logger: \u001b[90mundefined\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _parentFrame: \u001b[1mnull\u001b[22m,\n      _url: \u001b[32m'https://rahulshettyacademy.com/AutomationPractice/'\u001b[39m,\n      _name: \u001b[32m''\u001b[39m,\n      _detached: \u001b[33mfalse\u001b[39m,\n      _childFrames: \u001b[36m[Set]\u001b[39m,\n      _eventEmitter: \u001b[36m[EventEmitter]\u001b[39m,\n      _loadStates: \u001b[36m[Set]\u001b[39m,\n      _page: \u001b[36m[Page]\u001b[39m\n    },\n    _instrumentation: {},\n    _logger: \u001b[90mundefined\u001b[39m,\n    _channel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _object: \u001b[36m[Circular *3]\u001b[39m\n    },\n    _initializer: { preview: \u001b[32m'JSHandle@node'\u001b[39m },\n    _preview: \u001b[32m'JSHandle@<input value=\"option3\" type=\"checkbox\" id=\"checkBoxOption3\" name=\"checkBoxOption3\"/>'\u001b[39m,\n    _elementChannel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _pendingHandlers: Map(0) {},\n      _platform: \u001b[36m[Object]\u001b[39m,\n      on: \u001b[36m[Function: addListener]\u001b[39m,\n      off: \u001b[36m[Function: removeListener]\u001b[39m,\n      _object: \u001b[36m[Circular *3]\u001b[39m\n    }\n  }\n]\n"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "93ad582b5901ab13ff0d-7d58e6a84acf7238b4d4",
-              "file": "addemployee.spec.js",
-              "line": 29,
-              "column": 5
-            },
-            {
-              "title": "Verify  Error Messages for Mandatoryu fileds",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-04T05:15:10.380Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 13051,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-03T05:28:56.539Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-19cbd-sages-for-Mandatoryu-fileds-Google-Chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-19cbd-sages-for-Mandatoryu-fileds-Google-Chrome\\test-finished-2.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-19cbd-sages-for-Mandatoryu-fileds-Google-Chrome\\trace.zip"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\WWE-checkbox-Check-box-Example--2--Google-Chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\WWE-checkbox-Check-box-Example--2--Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\learnPlaywrightB29\\test-results\\WWE-checkbox-Check-box-Example--2--Google-Chrome\\trace.zip"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "93ad582b5901ab13ff0d-a0824fed4015b59bf462",
-              "file": "addemployee.spec.js",
-              "line": 37,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "fcb1227d6d47bdb0bc88-09a7285efd864377bec4",
+          "file": "WWE/checkbox.spec.js",
+          "line": 31,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-03T05:28:36.174Z",
-    "duration": 37005.42,
-    "expected": 2,
+    "startTime": "2025-07-04T05:15:09.040Z",
+    "duration": 13697.842,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

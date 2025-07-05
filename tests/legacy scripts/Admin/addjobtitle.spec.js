@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import data from "../../testData/addjobtitle.json"
+import data from "../../../testData/addjobtitle.json"
 
 
 test('TC1223 - should add a new job title successfully', async ({ page }) => {
