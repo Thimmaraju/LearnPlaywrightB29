@@ -17,7 +17,7 @@ test('TC1223 - should add a new job title successfully', async ({ page }) => {
     await page.locator("button[type='submit']").click()
 
     // Assertions
-    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
+    await expect.soft(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
 
     await page.locator('a[href="/web/index.php/admin/viewAdminModule"]').click()
     await page.locator("//span[normalize-space(text())='Job']").click()
