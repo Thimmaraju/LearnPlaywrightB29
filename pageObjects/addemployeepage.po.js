@@ -34,6 +34,8 @@ exports.addEmployeePage = class addEmployeePage {
 
         await this.firstnameInput.fill(firstname)
         await this.lastnameInput.fill(lastname)
+
+        //upload file 
         await this.saveButton.click()
     }
 

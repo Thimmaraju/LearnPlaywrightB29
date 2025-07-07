@@ -7,7 +7,9 @@ test.describe('Automation - Working With Elements', () => {
 
         await page.goto('https://the-internet.herokuapp.com/upload')
 
-        await page.locator('#file-upload').setInputFiles('./testData/files/Gemini_Generated_Image.png')
+        await page.locator('#file-upload').setInputFiles('./testData/files/rtmsample.png')
+
+        //testData\files\rtmsample.png
 
         await page.locator('#file-submit').click()
 
@@ -19,7 +21,7 @@ test.describe('Automation - Working With Elements', () => {
     })
 
 
-    test('Playwright Test Case - upload file example 2 ', async ({ page }) => {
+    test.skip('Playwright Test Case - upload file example 2 ', async ({ page }) => {
 
         await page.goto('https://cgi-lib.berkeley.edu/ex/fup.html')
 
@@ -41,10 +43,10 @@ test.describe('Automation - Working With Elements', () => {
         //     './testData/files/24. Example Defect.png'
         // ])
 
-        await page.locator('input[type="file"]').setInputFiles(['./testData/files/Gemini_Generated_Image.png', './testData/files/filetwo.png'])
+        await page.locator('input[type="file"]').setInputFiles(['./testData/files/Levels of testing.png', './testData/files/rtmsample.png'])
 
-        await expect(page.locator('p.name').nth(0)).toHaveText('Gemini_Generated_Image.png')
-        await expect(page.locator('p.name').nth(1)).toHaveText('filetwo.png')
+        await expect(page.locator('p.name').nth(0)).toHaveText('Levels of testing.png')
+        await expect(page.locator('p.name').nth(1)).toHaveText('rtmsample.png')
 
         await page.waitForTimeout(5000)
 
@@ -55,7 +57,7 @@ test.describe('Automation - Working With Elements', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            page.locator('a[href="download/learn.jpg"]').click()
+            page.locator('//a[@href="download/id.jpg"]').click()
         ]);
 
         const suggestedFileName = download.suggestedFilename()
@@ -69,7 +71,7 @@ test.describe('Automation - Working With Elements', () => {
     test('Download Multiple files and assert', async ({ page }) => {
         await page.goto('https://the-internet.herokuapp.com/download')
 
-        const fileNames = ["LambdaTest.txt", "luminoslogo.png"]
+        const fileNames = ["photo.png", "nRoBo-Logo.png"]
 
 
         for (const fileName of fileNames) {

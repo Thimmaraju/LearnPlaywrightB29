@@ -62,20 +62,20 @@
   },
   "suites": [
     {
-      "title": "WWE\\tables.spec.js",
-      "file": "WWE/tables.spec.js",
+      "title": "WWE\\newcontext.spec.js",
+      "file": "WWE/newcontext.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Automation - Working With Table",
-          "file": "WWE/tables.spec.js",
-          "line": 4,
+          "title": "Automation - Working With Elements",
+          "file": "WWE/newcontext.spec.js",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "Playwright Test Case - table",
+              "title": "browse context test",
               "ok": true,
               "tags": [],
               "tests": [
@@ -87,21 +87,30 @@
                   "projectName": "Google Chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4424,
+                      "duration": 26340,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[33m2\u001b[39m\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-05T06:22:30.552Z",
+                      "startTime": "2025-07-07T05:17:42.632Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\WWE-tables-Automation---Wo-086c7-laywright-Test-Case---table-Google-Chrome\\test-finished-1.png"
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\WWE-newcontext-Automation--239df-lements-browse-context-test-Google-Chrome\\test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\WWE-newcontext-Automation--239df-lements-browse-context-test-Google-Chrome\\test-finished-1.png"
                         }
                       ]
                     }
@@ -109,9 +118,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "fee08fa817316b96fa89-e018424da4abb25dfa24",
-              "file": "WWE/tables.spec.js",
-              "line": 6,
+              "id": "34a8a0c4b68d28cd32bf-89db7bc96cb8e34b77fe",
+              "file": "WWE/newcontext.spec.js",
+              "line": 5,
               "column": 3
             }
           ]
@@ -121,8 +130,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-05T06:22:25.966Z",
-    "duration": 9911.530999999959,
+    "startTime": "2025-07-07T05:17:37.651Z",
+    "duration": 32545.550999999978,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

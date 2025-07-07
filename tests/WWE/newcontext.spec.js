@@ -25,7 +25,7 @@ test.describe('Automation - Working With Elements', () => {
     await page2.goto('https://opensource-demo.orangehrmlive.com/');
 
     await page2.goto('https://opensource-demo.orangehrmlive.com/');
-    await page2.locator('input[name="username"]').fill("arjunp")
+    await page2.locator('input[name="username"]').fill("gaganm")
     await page2.locator("input[type='password']").fill("Pass@1234")
     await page2.locator("input[type='password']").press("Enter")
 

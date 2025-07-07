@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 import data from "../../../testData/addemployee.json"
 
-const creds = ["Admin", "Admin123"]
+const creds = ["Admin", "admin123"]
 test('Verify Add Employee',{tag: ["@smoke", "@raju"]}, async ({ page }) => {
   await page.goto('/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
@@ -17,6 +17,7 @@ test('Verify Add Employee',{tag: ["@smoke", "@raju"]}, async ({ page }) => {
   await page.getByRole('textbox', { name: 'First Name' }).fill(data.firstname);
   await page.getByRole('textbox', { name: 'Last Name' }).click();
   await page.getByRole('textbox', { name: 'Last Name' }).fill(data.lastname);
+  await page.locator('.oxd-file-input').setInputFiles("./testData/files/rtmsample.png")
   await page.getByRole('button', { name: 'Save' }).click();
   await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();
 });
