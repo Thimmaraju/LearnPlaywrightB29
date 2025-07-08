@@ -28,6 +28,10 @@
         {
           "outputFile": "results.json"
         }
+      ],
+      [
+        "D:\\playwright repos\\learnPlaywrightB29\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -39,7 +43,7 @@
       {
         "outputDir": "D:/playwright repos/learnPlaywrightB29/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -55,27 +59,144 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.52.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "WWE\\newcontext.spec.js",
-      "file": "WWE/newcontext.spec.js",
+      "title": "addemployee.spec.js",
+      "file": "addemployee.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Automation - Working With Elements",
-          "file": "WWE/newcontext.spec.js",
-          "line": 3,
+          "title": "Verify login funtionality",
+          "file": "addemployee.spec.js",
+          "line": 11,
           "column": 6,
           "specs": [
             {
-              "title": "browse context test",
+              "title": "Verify creation of Employee",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30155,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js:13:10",
+                        "location": {
+                          "file": "D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js",
+                          "column": 10,
+                          "line": 13
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Verify login funtionality\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ browser }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewPage()\n \u001b[90m 16 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js",
+                            "column": 10,
+                            "line": 13
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 11 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Verify login funtionality\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ browser }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m         page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewPage()\n \u001b[90m 16 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js:13:10\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\playwright repos\\learnPlaywrightB29\\pageObjects\\addemployeepage.po.js",
+                            "column": 39,
+                            "line": 29
+                          },
+                          "message": "Error: locator.click: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('//a[text()=\\'Add Employee\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pageObjects\\addemployeepage.po.js:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36masync\u001b[39m navigateAddEmployee() {\n \u001b[90m 28 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddemployeesubmenu\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m     }\n \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[2m    at addEmployeePage.navigateAddEmployee (D:\\playwright repos\\learnPlaywrightB29\\pageObjects\\addemployeepage.po.js:29:39)\u001b[22m\n\u001b[2m    at D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js:26:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-08T05:07:12.679Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-47ee8-Verify-creation-of-Employee-Google-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-47ee8-Verify-creation-of-Employee-Google-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js",
+                        "column": 10,
+                        "line": 13
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30272,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\playwright repos\\learnPlaywrightB29\\pageObjects\\addemployeepage.po.js",
+                            "column": 43,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//*[text()=\\'Successfully Saved\\']')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('//*[text()=\\'Successfully Saved\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pageObjects\\addemployeepage.po.js:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36masync\u001b[39m verifySuccess() {\n \u001b[90m 43 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msuccessmEssage)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     }\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36masync\u001b[39m verifyErrorMsgMandatoryFileds(){\u001b[0m\n\u001b[2m    at addEmployeePage.verifySuccess (D:\\playwright repos\\learnPlaywrightB29\\pageObjects\\addemployeepage.po.js:44:43)\u001b[22m\n\u001b[2m    at D:\\playwright repos\\learnPlaywrightB29\\tests\\addemployee.spec.js:32:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-07-08T05:07:47.055Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-47ee8-Verify-creation-of-Employee-Google-Chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-47ee8-Verify-creation-of-Employee-Google-Chrome-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "93ad582b5901ab13ff0d-7d58e6a84acf7238b4d4",
+              "file": "addemployee.spec.js",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "Verify  Error Messages for Mandatoryu fileds",
               "ok": true,
               "tags": [],
               "tests": [
@@ -87,30 +208,26 @@
                   "projectName": "Google Chrome",
                   "results": [
                     {
-                      "workerIndex": 12,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 26340,
+                      "duration": 22134,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "\u001b[33m2\u001b[39m\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T05:17:42.632Z",
+                      "startTime": "2025-07-08T05:08:20.818Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\WWE-newcontext-Automation--239df-lements-browse-context-test-Google-Chrome\\test-finished-2.png"
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-19cbd-sages-for-Mandatoryu-fileds-Google-Chrome\\test-finished-1.png"
                         },
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\WWE-newcontext-Automation--239df-lements-browse-context-test-Google-Chrome\\test-finished-1.png"
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\addemployee-Verify-login-f-19cbd-sages-for-Mandatoryu-fileds-Google-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -118,10 +235,252 @@
                   "status": "expected"
                 }
               ],
-              "id": "34a8a0c4b68d28cd32bf-89db7bc96cb8e34b77fe",
-              "file": "WWE/newcontext.spec.js",
-              "line": 5,
-              "column": 3
+              "id": "93ad582b5901ab13ff0d-a0824fed4015b59bf462",
+              "file": "addemployee.spec.js",
+              "line": 37,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify login funtionality",
+          "file": "login.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Login with Valid Credential",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-08T05:08:44.029Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-4590d-Login-with-Valid-Credential-Google-Chrome\\test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-4590d-Login-with-Valid-Credential-Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-4590d-Login-with-Valid-Credential-Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-286af5d37938c23e5364",
+              "file": "login.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "Verify Login with Valid username and Invalid password ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24753,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-08T05:09:07.286Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-7c0fd-rname-and-Invalid-password--Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-7c0fd-rname-and-Invalid-password--Google-Chrome\\test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-7c0fd-rname-and-Invalid-password--Google-Chrome\\test-finished-3.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-7c0fd-rname-and-Invalid-password--Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-147efbb5b366472227fc",
+              "file": "login.spec.js",
+              "line": 30,
+              "column": 5
+            },
+            {
+              "title": "Verify Login with Inalid username and valid password ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18773,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-08T05:09:32.702Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-584f1-sername-and-valid-password--Google-Chrome\\test-finished-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-584f1-sername-and-valid-password--Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-584f1-sername-and-valid-password--Google-Chrome\\test-finished-2.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-584f1-sername-and-valid-password--Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-c412e8635da47faa3af8",
+              "file": "login.spec.js",
+              "line": 39,
+              "column": 5
+            },
+            {
+              "title": "Verify Login with Inalid username and invalid password ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11954,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-08T05:09:52.041Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-b67c4-rname-and-invalid-password--Google-Chrome\\test-finished-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-b67c4-rname-and-invalid-password--Google-Chrome\\test-finished-4.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-b67c4-rname-and-invalid-password--Google-Chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-b67c4-rname-and-invalid-password--Google-Chrome\\test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-b67c4-rname-and-invalid-password--Google-Chrome\\test-finished-5.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\login-Verify-login-funtion-b67c4-rname-and-invalid-password--Google-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-c4bf4b148054b58fde1a",
+              "file": "login.spec.js",
+              "line": 47,
+              "column": 5
             }
           ]
         }
@@ -130,11 +489,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-07T05:17:37.651Z",
-    "duration": 32545.550999999978,
-    "expected": 1,
+    "startTime": "2025-07-08T05:07:10.743Z",
+    "duration": 175648.556,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

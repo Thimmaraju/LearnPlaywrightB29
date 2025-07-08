@@ -15,7 +15,7 @@ require('dotenv').config()
  */
 export default defineConfig({
 
-  globalTimeout: 60 * 60 *1000,  // 3600000
+  globalTimeout: 60 * 60 * 1000,  // 3600000
 
 
   //timeout : 60000,  // 30 sec 
@@ -34,15 +34,15 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html'], ["dot"], ['json', { outputFile: 'results.json' }]],
+  reporter: [['html'], ["dot"], ['json', { outputFile: 'results.json' }],["allure-playwright"]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
-    testIdAttribute : "name",
+    testIdAttribute: "name",
 
-    headless : false,
-    baseURL : "https://opensource-demo.orangehrmlive.com",
+    headless: false,
+    baseURL: "https://opensource-demo.orangehrmlive.com",
     screenshot: "on",
     video: "on",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -51,6 +51,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+
+    // {
+    //   name: "setup",
+    //   use: {
+    //     ...devices['Desktop Chrome'],
+    //     channel: 'chrome'
+    //   },
+    //   testMatch: /.*\.setup\.js/,
+    // },
     // {
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'] },
@@ -77,16 +86,19 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
-  //  {
-  //     name: 'Microsoft Edge',
-  //     use: { ...devices['Desktop Edge'], channel: 'msedge' },
-  //   },
+    //  {
+    //     name: 'Microsoft Edge',
+    //     use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    //   },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome',
+      use: {
+        ...devices['Desktop Chrome'], channel: 'chrome',
+         //storageState: ".auth/user.json",
         //viewport: { width: 375, height: 667 },
-            
-       },
+
+      },
+      //  dependencies: ["setup"],
     },
   ],
 
