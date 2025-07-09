@@ -52,14 +52,14 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
 
-    // {
-    //   name: "setup",
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //     channel: 'chrome'
-    //   },
-    //   testMatch: /.*\.setup\.js/,
-    // },
+    {
+      name: "setup",
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome'
+      },
+      testMatch: /.*\.setup\.js/,
+    },
     // {
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'] },
@@ -94,7 +94,7 @@ export default defineConfig({
       name: 'Google Chrome',
       use: {
         ...devices['Desktop Chrome'], channel: 'chrome',
-         //storageState: ".auth/user.json",
+        // storageState: ".auth/user.json",
         //viewport: { width: 375, height: 667 },
 
       },
