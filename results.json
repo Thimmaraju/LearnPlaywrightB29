@@ -82,13 +82,13 @@
   },
   "suites": [
     {
-      "title": "APITests\\apitest.spec.js",
-      "file": "APITests/apitest.spec.js",
+      "title": "interception\\mocking.spec.js",
+      "file": "interception/mocking.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Orange HRM POST  API",
+          "title": "Example for Mocking",
           "ok": true,
           "tags": [],
           "tests": [
@@ -100,32 +100,35 @@
               "projectName": "Google Chrome",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 9,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1039,
+                  "duration": 17675,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "ecrf6\n"
-                    },
-                    {
-                      "text": "{ error: { status: \u001b[33m401\u001b[39m, message: \u001b[32m'Session expired'\u001b[39m } }\n"
+                      "text": "Test Execution is Completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-09T05:26:09.701Z",
+                  "startTime": "2025-07-10T04:51:08.428Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwright repos\\learnPlaywrightB29\\test-results\\interception-mocking-Example-for-Mocking-Google-Chrome\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "8f8ac0dc30710d0b9fe6-e7c5fd72e1e9e7df4354",
-          "file": "APITests/apitest.spec.js",
-          "line": 40,
+          "id": "01343a6811bea28317d7-a359d7a3b13d6ddac223",
+          "file": "interception/mocking.spec.js",
+          "line": 4,
           "column": 1
         }
       ]
@@ -133,8 +136,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-09T05:26:04.157Z",
-    "duration": 6690.208000000101,
+    "startTime": "2025-07-10T04:51:01.368Z",
+    "duration": 24972.217999999877,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
